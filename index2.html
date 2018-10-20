@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <link href="http://bit.ly/pvdfonts" rel="stylesheet" type="text/css">
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 
@@ -144,79 +145,429 @@
       letter-spacing: 0;
       box-sizing: inherit;
     }
+
     .indiv-news .excerpt {
+      font-size: .875rem;
+      line-height: 1.3125rem;
+      letter-spacing: 0;
+      color: #6a6a6a;
+      font-family: Source Sans Pro, sans-serif;
+      font-weight: 400;
+      padding: 0;
+      box-sizing: inherit;
+    }
+
+    .indiv-news .time-con {
+      margin-top: 24px;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      box-sizing: inherit;
+    }
+
+    .indiv-news .span.time-displayed {
+      font-size: .875rem;
+      line-height: 1.3125rem;
+      letter-spacing: 0;
+      -webkit-box-flex: 1;
+      flex: 1;
+      color: #10475a;
+      font-family: Alegreya Sans, sans-serif;
+      font-weight: 500;
+      box-sizing: inherit;
+    }
+
+    .indiv-news .icon-con,
+    .indiv-news .time-con {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    .indiv-news .icon-con {
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+    }
+
+    .icon-con,
+    a {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+    }
+
+    .indiv-news .read-more {
+      font-size: .875rem;
+      line-height: 1.3125rem;
+      letter-spacing: .0625rem;
+      color: #e56f00;
+      text-transform: uppercase;
+      font-family: Source Sans Pro, sans-serif;
+      margin-left: 0;
+      position: relative;
+      font-weight: 700;
+      box-sizing: inherit;
+    }
+
+    .icon-con span {
+      float: left;
+    }
+
+    .indiv-news .icon-arrow-right {
+      margin: 0 0 0 5%;
+    }
+
+    .icon-con span {
+      float: left;
+      box-sizing: inherit;
+    }
+
+    .icon {
+      float: left;
+      width: 30px;
+      margin: 25px;
+      position: relative;
+      box-sizing: inherit;
+    }
+
+    .indiv-news .excerpt {
+      font-size: .875rem;
+      line-height: 1.3125rem;
+      letter-spacing: 0;
+    }
+
+    .fig-cta-wrap {
+      position: relative;
+      float: left;
+      margin-right: 0;
+      width: 100%;
+      box-sizing: inherit;
+    }
+
+    .fig-cta-homepage {
+      max-width: 84em;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 2em;
+      padding-right: 2em;
+      position: relative;
+      z-index: 111;
+      box-sizing: inherit;
+    }
+
+    .fig-cta-homepage:after {
+      clear: both;
+      content: "";
+      display: table;
+      box-sizing: inherit;
+    }
+
+    .img-cta-con {
+      float: left;
+      width: 40%;
+      margin-right: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      background: #e56f00;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .1);
+      justify-content: center;
+      box-sizing: inherit;
+    }
+
+    .img-cta-con .img-con {
+      display: block;
+      text-align: center;
+    }
+
+
+    .img-cta-con .img-con img {
+      display: inline-block;
+      height: 143px;
+      box-sizing: inherit;
+    }
+
+    .text-cta-con {
+      float: left;
+      width: 60%;
+      margin-right: 0;
+      padding-left: 8%;
+      padding-right: 2%;
+      position: relative;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: hidden;
+      background: #f7f7f7;
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .1);
+      box-sizing: inherit;
+    }
+
+    .text-cta-con h2 {
+      font-size: 1.54rem;
+      line-height: 1.87688rem;
+      letter-spacing: 0;
+      color: #10475a;
+      font-family: Montserrat, sans-serif;
+      font-weight: 400;
+      margin: 38px 0 8px;
+      text-align: left;
+      position: relative;
+      box-sizing: inherit;
+    }
+    .text-cta-con p {
+    font-size: .875rem;
+    line-height: 1.3125rem;
+    letter-spacing: 0;
+    font-family: Source Sans Pro,sans-serif;
+    margin-bottom: 24px;
+    color: #6a6a6a;
+    text-align: left;
+    }
+    .fig-btn, .fig-btn.primary, button, input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    border: 2px solid #3894ac;
+    border-radius: 0;
+    color: #3894ac;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Source Sans Pro,sans-serif;
+    font-size: 1em;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    line-height: 1;
+    padding: 1em;
+    text-decoration: none;
+    -webkit-transition: background-color .15s ease;
+    transition: background-color .15s ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+banner-desc, .icon-con, a {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    box-sizing: inherit;
+}
+
+.fig-icon-nav-wrap.open-prov {
+    width: 100%;
+    box-sizing: inherit;
+}
+section {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.fig-icon-nav-wrap.open-prov .fig-icon-nav {
+    overflow: hidden;
+}
+.fig-icon-nav-wrap.open-prov .section-header {
+    text-align: center;
+    float: left;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    box-sizing: inherit;
+}
+.fig-icon-nav-wrap.open-prov .icon-nav-ul {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+    float: left;
+    background: #f7f7f7;
+    padding: 69px 3.6% 20px;
+    box-sizing: inherit;
+    
+}
+
+.fig-icon-nav-wrap.open-prov h2 {
+    font-size: 1.7325rem;
+    line-height: 2.1175rem;
+    lecolor: #10475a;
+    font-family: Montserrat,sans-serif;
+    margin-bottom: 6px;
+    width: 100%;
+    text-align: left;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 0 15px;
+    box-sizing: inherit;
+}
+.fig-icon-nav-wrap.open-prov p {
+    font-size: 1.44375rem;
+    line-height: 1.54rem;
+    letter-spacing: 0;
+    color: #10475a;
+    font-family: Alegreya Sans,sans-serif;
+    font-weight: 100;
+    margin-bottom: 30px;
+    box-sizing: inherit;
+    
+}
+.fig-icon-nav-wrap.open-prov h2, .fig-icon-nav-wrap.open-prov p {
+    width: 100%;
+    text-align: left;
+    box-sizing: inherit;
+}
+
+.fig-icon-nav-wrap.open-prov li {
+    width: 45%;
+    margin-right: 4%;
+    display: inline-block;
+    text-align: left;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    margin-bottom: 40px;
+    box-sizing: inherit;
+}
+.fig-icon-nav-wrap.open-prov li {
+    width: 45%;
+    margin-right: 4%;
+    display: inline-block;
+    text-align: left;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    margin-bottom: 40px;
+        box-sizing: inherit;
+        
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.fig-icon-nav-wrap.open-prov li img {
+    float: left;
+    margin-right: 20px;
+    box-sizing: inherit;
+}
+img, picture {
+    margin: 0;
+    max-width: 100%;
+    box-sizing: inherit;
+}
+.fig-icon-nav-wrap.open-prov li .content-con {
+    float: left;
+    width: 80%;
+        width: 45%;
+    margin-right: 4%;
+    display: inline-block;
+    text-align: left;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    margin-bottom: 40px;
+}
+ol, ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.fig-icon-nav-wrap.open-prov li h1 {
+    font-size: .875rem;
+    line-height: 1.3125rem;
+    letter-spacing: .08181rem;
+}
+.fig-icon-nav-wrap.open-prov li h1 {
+    color: #10475a;
+    font-family: Montserrat,sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+font-weight: 400;
+    font-style: normal;
+  box-sizing: inherit;
+}
+
+.fig-icon-nav-wrap.open-prov li p {
     font-size: .875rem;
     line-height: 1.3125rem;
     letter-spacing: 0;
     color: #6a6a6a;
     font-family: Source Sans Pro,sans-serif;
-    font-weight: 400;
+    margin-bottom: 10px;
+    
+}
+.fig-icon-nav-wrap.open-prov h2, .fig-icon-nav-wrap.open-prov p {
+    width: 100%;
+    text-align: left;
+    box-sizing: inherit;
+}
+
+.fig-icon-nav-wrap.open-prov li .icon-con .details {
     padding: 0;
-    box-sizing: inherit;  
-   }
-
-.indiv-news .time-con {
-    margin-top: 24px;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    box-sizing: inherit;
-    }
-
-.indiv-news  .span.time-displayed {
-    font-size: .875rem;
-    line-height: 1.3125rem;
-    letter-spacing: 0;
-    -webkit-box-flex: 1;
-    flex: 1;
-    color: #10475a;
-    font-family: Alegreya Sans,sans-serif;
-    font-weight: 500;
-    box-sizing: inherit;
-}
-
-.indiv-news .icon-con, .indiv-news .time-con {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-.indiv-news .icon-con {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-}
-.icon-con, a {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-}
-
-    .indiv-news .read-more {
-    font-size: .875rem;
-    line-height: 1.3125rem;
-    letter-spacing: .0625rem;
-    color: #e56f00;
-    text-transform: uppercase;
-    font-family: Source Sans Pro,sans-serif;
-    margin-left: 0;
-    position: relative;
+    margin: 0;
     font-weight: 700;
-    box-sizing: inherit; 
-      }
+}
+.fig-icon-nav-wrap.open-prov li .icon-con span {
+    font-size: .875rem;
+    line-height: 1.3125rem;
+    letter-spacing: .09625rem;
+}
+.fig-icon-nav-wrap.open-prov li .icon-con span {
+    color: #e56f00;
+    font-family: Source Sans Pro,sans-serif;
+    text-transform: uppercase;
+}
+.icon-con .details {
+    color: #fff;
+    font-family: Source Sans Pro,sans-serif;
+    text-transform: uppercase;
+    padding-left: 15%;
+    position: relative;
+}
 
 .icon-con span {
     float: left;
-    }
-
-.indiv-news .icon-arrow-right {
-    margin: 0 0 0 5%;
+    margin-left: 5%;
+}
+.fig-icon-nav-wrap.open-prov li .icon-con span {
+    font-size: .875rem;
+    line-height: 1.3125rem;
+    letter-spacing: .09625rem;
+}
+.fig-icon-nav-wrap.open-prov li .icon-con span {
+    color: #e56f00;
+    font-family: Source Sans Pro,sans-serif;
+    text-transform: uppercase;
+}
+.fig-icon-nav-wrap.open-prov li .icon-arrow-right {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .icon-con span {
     float: left;
-    box-sizing: inherit;
+    margin-left: 5%;
 }
 .icon {
     float: left;
@@ -225,11 +576,50 @@
     position: relative;
     box-sizing: inherit;
 }
+.fig-icon-nav-wrap.open-prov li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.fig-icon-nav-wrap.open-prov li .icon-con span {
+    font-size: .875rem;
+    line-height: 1.3125rem;
+    letter-spacing: .09625rem;
+        color: #e56f00;
+    font-family: Source Sans Pro,sans-serif;
+    text-transform: uppercase;
+        margin-top: 0;
+    margin-bottom: 0;
+}
+.icon.icon-arrow-right:before {
+    content: '';
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiI…AgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=);
+}
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
   </style>
 
 
@@ -384,7 +774,147 @@
       </div>
     </section>
   </div>
+  <section id='' class='fig-cta-wrap home'>
+    <div class="fig-cta fig-cta-homepage">
+      <div class="img-cta-con">
+        <div class="img-con">
+          <img src="http://www.providenceri.gov/wp-content/uploads/2016/09/group-3.svg" alt="Providence 311" />
+        </div>
+      </div>
+      <div class="text-cta-con">
+        <h2>The Mayor’s Center for City Services</h2>
+        <p>Request Trash Pickup, Report Potholes, Graffiti and more.</p>
+        <div class="fig-cta-item fig-cta-btn">
+          <a href="http://www.providenceri.gov/pvd-311/" class="fig-btn"> Submit Your PVD311 Request </a>
 
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id='' class='fig-icon-nav-wrap open-prov'>
+    <div class="fig-icon-nav">
+      <div class="section-header" style="background-image: url(http://www.providenceri.gov/wp-content/uploads/2017/06/CiyHall.jpg)">
+      </div>
+      <div class="icon-nav-ul">
+        <h2 class="section-title">Open Providence</h2>
+        <p class="section-subtitle">Your government, open to you.</p>
+        <ul>
+          <li>
+            <img src="http://www.providenceri.gov/wp-content/uploads/2016/12/database.svg" alt="Open Data Icon in Open Providence" />
+            <div class="content-con">
+              <h1>OPEN DATA</h1>
+              <p>Search, download and develop using our civic data portal.</p>
+              <div class="icon-con">
+                <a title="Search, download and develop using our civic data portal." href="https://data.providenceri.gov/" target="_blank">
+
+                                                      <span class="details">Details</span>
+                  <span class="icon icon-arrow-right"></span></a>
+
+              </div>
+            </div>
+          </li>
+          <li>
+            <img src="http://www.providenceri.gov/wp-content/uploads/2016/12/users.svg" alt="Open Government Icon - Users" />
+            <div class="content-con">
+              <h1>OPEN MEETINGS</h1>
+              <p>Track agendas, minutes and recordings of public meetings and events.</p>
+              <div class="icon-con">
+                <a title="Track agendas, minutes and recordings of public meetings and events." href="http://providenceri.iqm2.com/Citizens/Default.aspx" target="_blank">
+
+                                                      <span class="details">Details</span>
+                  <span class="icon icon-arrow-right"></span></a>
+
+              </div>
+            </div>
+          </li>
+          <li>
+            <img src="http://www.providenceri.gov/wp-content/uploads/2016/12/chart-bars.svg" alt="Open Reporting Icon" />
+            <div class="content-con">
+              <h1>OPEN BUDGET</h1>
+              <p>Better understanding the city's budget and where dollars are being allocated.</p>
+              <div class="icon-con">
+                <a title="Better understanding the city's budget and where dollars are being allocated." href="https://providence.budget.socrata.com/#!/year/default" target="_blank">
+
+                                                      <span class="details">Details</span>
+                  <span class="icon icon-arrow-right"></span></a>
+
+              </div>
+            </div>
+          </li>
+          <li>
+            <img src="http://www.providenceri.gov/wp-content/uploads/2016/12/book.svg" alt="Open Checkbook Icon" />
+            <div class="content-con">
+              <h1>OPEN CHECKBOOK</h1>
+              <p> Explore the city's expenditures in greater detail.</p>
+              <div class="icon-con">
+                <a title=" Explore the city's expenditures in greater detail." href="http://opencheckbook.providenceri.gov/#!/year/2018/" target="_blank">
+
+                                                      <span class="details">Details</span>
+                  <span class="icon icon-arrow-right"></span></a>
+
+              </div>
+            </div>
+          </li>
+          <li>
+            <img src="http://www.providenceri.gov/wp-content/uploads/2016/12/file-empty.svg" alt="file empty icon" />
+            <div class="content-con">
+              <h1>OPEN RECORDS</h1>
+              <p>Submit a request for records.</p>
+              <div class="icon-con">
+                <a title="Submit a request for records." href="https://providenceri.nextrequest.com/" target="_blank">
+
+                                                      <span class="details">Details</span>
+                  <span class="icon icon-arrow-right"></span></a>
+
+              </div>
+            </div>
+          </li>
+          <li>
+            <img src="http://www.providenceri.gov/wp-content/uploads/2016/12/map-marker.svg" alt="map marker" />
+            <div class="content-con">
+              <h1>ACCESS MAPS</h1>
+              <p>Visualize city and census data with interactive maps.</p>
+              <div class="icon-con">
+                <a title="Visualize city and census data with interactive maps." href="http://www.providenceri.gov/providence-online-mapping-dashboard/">
+
+                                                      <span class="details">Details</span>
+                  <span class="icon icon-arrow-right"></span></a>
+
+              </div>
+            </div>
+          </li>
+          <li>
+            <img src="http://www.providenceri.gov/wp-content/uploads/2016/09/cip-projects.png" alt="Incon for Capital Improvement Projects" />
+            <div class="content-con">
+              <h1>Providence Capital Improvement Plan</h1>
+              <p>Look at the five-year program of planned improvements to Providence’s public infrastructure.</p>
+              <div class="icon-con">
+                <a title="Look at the five-year program of planned improvements to Providence’s public infrastructure." href="http://www.providenceri.gov/pvdcip/">
+
+                                                      <span class="details">Details</span>
+                  <span class="icon icon-arrow-right"></span></a>
+
+              </div>
+            </div>
+          </li>
+          <li>
+            <img src="http://www.providenceri.gov/wp-content/uploads/2016/12/file-empty.svg" alt="file empty icon" />
+            <div class="content-con">
+              <h1>Filings of Elected Officials</h1>
+              <p>View public filings of the City's elected officials.</p>
+              <div class="icon-con">
+                <a title="View public filings of the City's elected officials." href="http://www.providenceri.gov/ethics/filings-elected-officials/">
+
+                                                      <span class="details">Details</span>
+                  <span class="icon icon-arrow-right"></span></a>
+
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
 </body>
 
